@@ -139,7 +139,6 @@ public class MiniPool implements AutoCloseable {
         }
     }
 
-
     /**
      * Number of connections currently idle in the pool.
      */
@@ -153,8 +152,6 @@ public class MiniPool implements AutoCloseable {
     public int totalCount() {
         return totalCount.get();
     }
-
-
 
     /**
      * Opens a new physical JDBC connection to the database.
