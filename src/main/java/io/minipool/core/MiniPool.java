@@ -132,7 +132,6 @@ public class MiniPool implements AutoCloseable {
     public void close() {
         shutdown = true;
         Connection conn;
-        //noinspection resource
         while ((conn = idle.poll()) != null) {
             destroy(conn);
             totalCount.decrementAndGet();
