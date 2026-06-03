@@ -20,9 +20,3 @@ Update the database settings in `src/main/java/io/minipool/App.java`, then run:
 mvn compile
 mvn exec:java
 ```
-
-Run tests with:
-
-```bash
-mvn test
-```
