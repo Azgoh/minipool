@@ -146,9 +146,9 @@ c2.increment();
 
 However, if multiple threads try to access the same `Counter` instance, they will syncrhonize on the same lock.
 
-While `synchronized` is simple and effective, it introduces some overhead. It introduces blocking behavior because threads
-may need to wait for the lock to become available. This can lead to a performance bottleneck. This limitation is why
-`synchronized` is not widely used and other mechanisms are preferred for concurrent programming. We discuss them in the following sections.
+While `synchronized` is simple and effective, it introduces some overhead. It can introduce blocking behavior because threads
+may need to wait for the lock to become available. This can lead to a performance bottleneck. There are also other mechanisms
+that we can use to deal with race conditions, and we will discuss them in the next sections.
 
 ## 3) `volatile`
 
